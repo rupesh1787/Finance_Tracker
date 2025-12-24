@@ -9,7 +9,7 @@ async function throwIfResNotOk(res: Response) {
 
 // Base URL for API requests. Prefer `import.meta.env.VITE_API_URL` but
 // fall back to your provided Render backend URL so the app works out of the box.
-export const API_BASE = (import.meta.env.VITE_API_URL as string) || "https://ab-c819.onrender.com";
+export const API_BASE = (import.meta.env.VITE_API_URL as string) || "https://your-render-backend-url.onrender.com";
 
 export function fullUrl(path: string) {
   if (/^https?:\/\//.test(path)) return path;
